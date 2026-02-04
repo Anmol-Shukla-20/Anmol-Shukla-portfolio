@@ -1,0 +1,46 @@
+body {
+  background: black;
+  color: #00ff66;
+  font-family: monospace;
+}
+
+.terminal {
+  width: 80%;
+  margin: 40px auto;
+  border: 2px solid #00ff66;
+  padding: 15px;
+}
+
+.header {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#output {
+  min-height: 300px;
+  white-space: pre-wrap;
+}
+
+.input-line {
+  display: flex;
+}
+
+.prompt {
+  margin-right: 8px;
+}
+
+input {
+  background: black;
+  border: none;
+  color: #00ff66;
+  outline: none;
+  width: 100%;
+}
+
+button {
+  background: black;
+  border: 1px solid #00ff66;
+  color: #00ff66;
+  margin: 5px;
+  cursor: pointer;
+}
