@@ -2,6 +2,14 @@ body {
   background: black;
   color: #00ff66;
   font-family: monospace;
+  opacity: 0;
+  animation: pageFade 0.8s ease forwards;
+}
+
+@keyframes pageFade {
+  to {
+    opacity: 1;
+  }
 }
 
 .terminal {
@@ -44,3 +52,28 @@ button {
   margin: 5px;
   cursor: pointer;
 }
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  animation: floatIn 1.2s ease-out forwards;
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+
